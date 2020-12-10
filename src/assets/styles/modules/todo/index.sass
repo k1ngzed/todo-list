@@ -1,0 +1,40 @@
+.todo
+    max-width: 600px
+    margin: 0 auto
+    &-header
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: center
+        min-height: 40px
+        .el-button
+            position: absolute
+            right: 0
+        span
+            font-weight: bold
+
+    // list
+    &-list
+        margin-top: 25px
+        &__item
+            position: relative
+            padding: 15px
+            padding-left: 40px
+            margin-bottom: 15px
+            background: $bg-color-white
+            border-radius: $border-radius-base
+            .item
+                &-number
+                    position: absolute
+                    top: 20px
+                    left: 17px
+                &-header
+                    margin-bottom: 15px
+                    &__title
+                        color: $color-primary
+                    &__actions
+                &-header,
+                &-footer
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
